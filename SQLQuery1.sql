@@ -21,3 +21,18 @@ alter table employee_payroll
 add employee_gender varchar(1);
 
 update employee_payroll set employee_gender = 'M' where employee_name = 'Amit'; 
+
+select MIN(employee_salary)
+from employee_payroll;
+
+select MAX(employee_salary)
+from employee_payroll;
+
+SELECT COUNT(employee_salary)
+FROM employee_payroll;
+
+SELECT AVG(employee_salary)
+FROM employee_payroll;
+
+SELECT SUM(employee_salary)
+FROM employee_payroll;
