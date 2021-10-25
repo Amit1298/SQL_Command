@@ -16,3 +16,8 @@ insert into employee_payroll values(3,'Satty',11000,'11Oct');
 insert into employee_payroll values(4,'Lala',23000,'1Aug');
 
 select employee_salary from employee_payroll where employee_name = 'Krishna';
+
+alter table employee_payroll
+add employee_gender varchar(1);
+
+update employee_payroll set employee_gender = 'M' where employee_name = 'Amit'; 
