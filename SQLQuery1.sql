@@ -14,3 +14,5 @@ insert into employee_payroll values(1,'Amit',18000,'15Sep');
 insert into employee_payroll values(2,'Krishna',57000,'17Sep');
 insert into employee_payroll values(3,'Satty',11000,'11Oct');
 insert into employee_payroll values(4,'Lala',23000,'1Aug');
+
+select employee_salary from employee_payroll where employee_name = 'Krishna';
