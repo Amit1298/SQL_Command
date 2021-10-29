@@ -36,3 +36,12 @@ FROM employee_payroll;
 
 SELECT SUM(employee_salary)
 FROM employee_payroll;
+
+ALTER TABLE employee_payroll
+ADD employee_phone varchar(20);
+
+ALTER TABLE employee_payroll
+ADD employee_address varchar(50);
+
+ALTER TABLE employee_payroll
+ADD employee_department varchar(50);
