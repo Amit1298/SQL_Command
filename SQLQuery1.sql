@@ -45,3 +45,19 @@ ADD employee_address varchar(50);
 
 ALTER TABLE employee_payroll
 ADD employee_department varchar(50);
+
+UPDATE employee_payroll
+SET employee_phone = '9897139203', employee_address= 'Defence Colony Agra',employee_department='Mechanical'
+WHERE employee_id = 1;
+
+UPDATE employee_payroll
+SET employee_gender='F',employee_phone = '7017362779', employee_address= 'Asroi Hathras',employee_department='Service'
+WHERE employee_id = 2;
+
+UPDATE employee_payroll
+SET  employee_gender='M',employee_phone = '9912237599', employee_address= 'Devri Road Agra',employee_department='IT'
+WHERE employee_id = 3;
+
+UPDATE employee_payroll
+SET  employee_gender='T',employee_phone = '9627074345', employee_address= 'Agra Cantt',employee_department='Photographer'
+WHERE employee_id = 4;
