@@ -61,3 +61,34 @@ WHERE employee_id = 3;
 UPDATE employee_payroll
 SET  employee_gender='T',employee_phone = '9627074345', employee_address= 'Agra Cantt',employee_department='Photographer'
 WHERE employee_id = 4;
+
+ALTER TABLE employee_payroll
+ADD employee_Basic_Pay int;
+
+ALTER TABLE employee_payroll
+ADD employee_Deduction int;
+
+ALTER TABLE employee_payroll
+ADD employee_TaxablePay int;
+
+ALTER TABLE employee_payroll
+ADD employee_IncomeTax int;
+
+ALTER TABLE employee_payroll
+ADD employee_NetPay int;
+
+UPDATE employee_payroll
+SET  employee_Basic_Pay=9500,employee_Deduction = 1027, employee_TaxablePay= 660,employee_IncomeTax=534, employee_NetPay=14300
+WHERE employee_id = 1;
+
+UPDATE employee_payroll
+SET  employee_Basic_Pay=10500,employee_Deduction = 1327, employee_TaxablePay= 630,employee_IncomeTax=534, employee_NetPay=16300
+WHERE employee_id = 2;
+
+UPDATE employee_payroll
+SET  employee_Basic_Pay=9500,employee_Deduction = 1027, employee_TaxablePay= 660,employee_IncomeTax=534, employee_NetPay=14300
+WHERE employee_id = 3;
+
+UPDATE employee_payroll
+SET  employee_Basic_Pay=9500,employee_Deduction = 1027, employee_TaxablePay= 660,employee_IncomeTax=534, employee_NetPay=14300
+WHERE employee_id = 4;
